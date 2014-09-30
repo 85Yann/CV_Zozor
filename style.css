@@ -1,0 +1,393 @@
+/* ----------------------------- */
+/*  DEBUT    reset   CSS          */
+/* ----------------------------- */
+/*!
+* www.KNACSS.com V2.9 (2013-10) @author: Raphael Goetter, Alsacreations
+* Licence WTFPL http://www.wtfpl.net/ 
+* VERSION Modifié Pour le CV de ZOZOR
+*/
+/* base font-size corresponds to 10px and is adapted to rem unit */
+html {
+	font-size: 62.5%;
+}
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1.4em; /* equiv 14px */
+	line-height: 1.5; /* adapt to your design */
+}
+
+/* font-sizing for content */
+/* preserves vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+p,
+ul,
+label{
+	margin: .75em 0 0;
+	line-height: normal;
+}
+h1 {
+	margin: 0;
+	font-size: 2.2857em; /* equiv 32px */
+	line-height: 1.3126;
+}
+h2 {
+	margin: 0;
+	font-size: 1.7em; /* equiv 28px */
+	line-height: 1.5;
+}
+h3 {
+	margin: 0;
+	font-size: 1.7143em; /* equiv 24px */
+	line-height: 1.75;
+}
+
+/* soft reset */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	padding: 0;
+    margin: 0;
+}
+strong {
+	font-weight: bold;
+}
+
+/* avoid margins on nested elements */
+li p,
+li ul {
+	margin-top: 0;
+	margin-bottom: 0;
+    text-align: justify;
+}
+/* Google Gmap3 bug fix on images */
+:not(.gm-style) img {
+	height: auto !important;
+}
+.ie678 .gm-style img {
+	height: 100%;  /* IE678 hack */
+}
+.gm-style img,
+.gmnoscreen img,
+.gmnoprint img {
+	max-width: none !important;
+}
+a img { border: 0; }
+/* ----------------------------- */
+/* FIN     reset   CSS            */
+/* ----------------------------- */
+
+/* ----------------------------- */
+/* DEBUT    CSS    ZOZOR          */
+/* ----------------------------- */
+/*style commun*/
+body{
+    background: url('images/background.png');
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    color: #666663;
+}
+#main_wrapper{
+    width: 720px;
+    margin: 0 auto;   
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #002d40; 
+}
+h2{
+    font-weight: normal;
+}
+li{
+    list-style-type: none;
+}
+ul{
+    margin: 0;
+}
+section{
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9a9a9a;
+    box-shadow: 0px 2px 1px -1px #ffffff;
+}
+section h1, footer h1 {
+    margin-bottom: 15px;
+    padding-left: 40px;
+}
+section h2{
+    color: #002d40;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+footer{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+a{
+    color: #002d40;
+    text-decoration: none;
+}
+a:hover, a:focus{
+    color: #002d40;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited{
+    color: #002d40;
+    font-weight: bold;
+    text-decoration: none;    
+}
+/*Fin style commun*/
+
+/*style header*/
+header {
+    padding: 10px;
+    clear: both;
+    text-align: center;
+    min-height: 165px;
+}
+header h1{
+    font-size: 5.5em;
+}
+header h2{
+    color: #03638b;
+}
+header img{
+    border-radius: 5px;
+    border: 5px solid #fff;
+    box-shadow: 2px 2px 2px #ababab;
+    float: left;
+    margin-right: 10px;
+}
+/*Fin style header*/
+
+/*Style Nav*/
+nav{
+    padding: 0;
+    clear: both;
+}
+nav ul{
+    display: block;
+    border-top: 1px solid #002d40;
+    border-bottom: 1px solid #002d40;
+    padding: 10px 0;
+}
+nav li{
+    display: inline-block;
+    width: 141px;
+    text-align: center;
+}
+nav a{
+    font-size: 1em;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 35px;
+}
+nav a[href*="viadeo"]{
+    background-image: url('images/social/viadeo.png');
+}
+nav a[href*="twitter"]{
+    background-image: url('images/social/twitter.png');
+}
+nav a[href*="facebook"]{
+    background-image: url('images/social/facebook.png');
+}
+nav a[href*="linkedin"]{
+    background-image: url('images/social/linkedin.png');
+}
+nav a[href*="mailto"]{
+    background-image: url('images/social/mail.png');
+}
+/*Fin style Nav*/
+
+/*Style compétences*/
+.competences h1{
+    background: url('images/titres/competences.png') no-repeat 0px center;
+}
+.competences ul li{
+    display: inline-block;
+    width: 107px;
+    background-repeat: no-repeat;
+    background-position: 0px center;
+    padding-left: 45px;
+    color: #002d40;
+    font-weight: bold;
+    margin-top: 10px;
+    line-height: normal;
+    font-size: 1.15em;
+    padding-right: 20px;
+}
+.competences ul li.html5{
+    background-image: url('images/competences/html5.png');
+}
+.competences ul li.css3{
+    background-image: url('images/competences/css3.png');
+}
+.competences ul li.php{
+    background-image: url('images/competences/php.png');
+}
+.competences ul li.mysql{
+    background-image: url('images/competences/mysql.png');
+}
+.competences ul li.xml{
+    background-image: url('images/competences/xml.png');
+}
+.competences ul li.xpath{
+    background-image: url('images/competences/xpath.png');
+}
+.competences ul li.javascript{
+    background-image: url('images/competences/javascript.png');
+}
+.competences ul li.jquery{
+    background-image: url('images/competences/jquery.png');
+}
+.competences ul li.photoshop{
+    background-image: url('images/competences/ps.png');
+}
+.competences ul li.illustrator{
+    background-image: url('images/competences/illustrator.png');
+}
+.competences ul li div.niveau {
+    width: 83px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-image: url('images/competences/niveau.png');
+}
+.competences ul li div.niv5{
+    background-position: 0px 0px;
+}
+.competences ul li div.niv4{
+    background-position: 0px -17px;
+}
+.competences ul li div.niv3{
+    background-position: 0px -32px;
+}
+.competences ul li div.niv2{
+    background-position: 0px -48px;
+}
+.competences ul li div.niv1{
+    background-position: 0px -64px;
+}
+/*Fin Style compétences*/
+
+/*Style experiences*/
+.experiences h1{
+    background: url('images/titres/experiences_pro.png') no-repeat 0px center;
+}
+.experiences ul li {
+    padding-left: 125px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+}
+.experiences ul li.simpleit {
+    background-image: url('images/experiences/simple_it_logo.png');
+}
+.experiences ul li.mcdonalds {
+    background-image: url('images/experiences/macdo_logo.png');
+}
+.experiences ul li.tavel {
+    background-image: url('images/experiences/tavel_logo.png');
+}
+/*FIN Style experiences*/
+
+/*Style formations*/
+.formations h1{
+    background: url('images/titres/formations.png') no-repeat 0px center;
+}
+.formations ul li {
+    margin-bottom: 10px;
+}
+/*FIN Style formations*/
+
+/*Style interets*/
+.interet h1{
+    background: url('images/titres/centre_interet.png') no-repeat 0px center;
+}
+.interet ul li {
+    width: 171px;
+    vertical-align: top;
+    display: inline-block;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+.interet ul li.voyages {
+    background-image: url('images/centre_interet/voyages.png');
+}
+.interet ul li.video {
+    background-image: url('images/centre_interet/jeux.png');
+}
+.interet ul li.photo {
+    background-image: url('images/centre_interet/photographie.png');
+}
+.interet ul li.arc {
+    background-image: url('images/centre_interet/tir_a_l_arc.png');
+}
+.interet ul li.films {
+    background-image: url('images/centre_interet/films.png');
+}
+.interet ul li.poulet {
+    background-image: url('images/centre_interet/poulet.png');
+}
+/*FIN Style interets*/
+
+/*Style footer*/
+footer h1{
+    background: url('images/titres/contact.png') no-repeat 0px center;
+    margin-bottom: 0px;
+}
+footer form{
+    width: 338px;
+    display: inline-block;
+    padding: 10px;
+    text-align: right;
+}
+footer form input, footer form textarea{
+    width: 97%;
+    background: none;
+    border-radius: 3px;
+    border: 1px solid #002d40;
+    padding: 5px;
+    margin: 5px 0;
+    box-shadow: inset 0px 2px 5px 0px #002d40;
+    color: #b3b3b3;
+}
+footer form textarea{
+    min-height: 100px;
+}
+footer form input[type="submit"] {
+    background: #002d40 url('images/enveloppe.png') no-repeat 0px center;
+    width: 110px;
+    padding-left: 30px;
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    color: #fff;
+    font-size: 1.2em;
+}
+footer aside{
+    display: inline-block;
+    padding: 10px;
+    width: 338px;
+}
+footer aside p{
+    margin-top: 0px;
+}
+footer .carte{
+    margin-top: 15px;
+}
+footer .carte iframe {
+    border: 1px solid #9a9a9a;
+}
+/*FIN Style footer*/
+
+
+/* ----------------------------- */
+/* FIN      CSS    ZOZOR          */
+/* ----------------------------- */
